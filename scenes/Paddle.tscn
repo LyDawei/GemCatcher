@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dodawa45mw820"]
+
+[ext_resource type="Texture2D" uid="uid://b3u580yb1h5hs" path="res://assets/paddleBlu.png" id="1_pjqvs"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oiuyw"]
+radius = 12.0
+height = 104.0
+
+[node name="Paddle" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_pjqvs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_oiuyw")

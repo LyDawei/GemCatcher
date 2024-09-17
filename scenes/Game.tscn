@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckx8q7addi4yq"]
+
+[ext_resource type="Texture2D" uid="uid://c3fj8s4d3mgva" path="res://assets/GameBg.png" id="1_bt3us"]
+[ext_resource type="PackedScene" uid="uid://dodawa45mw820" path="res://scenes/Paddle.tscn" id="2_qv17u"]
+
+[node name="Game" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1155.0
+offset_bottom = 659.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_bt3us")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Paddle" parent="." instance=ExtResource("2_qv17u")]
+position = Vector2(606, 542)
