@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct3pqh68vbvr"]
+
+[ext_resource type="Script" path="res://person.gd" id="1_se0vv"]
+
+[node name="Main" type="Node"]
+
+[node name="Person" type="Node" parent="."]
+script = ExtResource("1_se0vv")
+
+[node name="Animal" type="Node" parent="."]
